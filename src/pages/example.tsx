@@ -23,12 +23,17 @@ function Example() {
         </IonHeader>
         <ul>
           <li>
-            <Link to="/example/start">Detail 1 - go here first</Link>
+            <Link to="/example/d1">Detail 1 - It's button uses "replace"</Link>
           </li>
-        </ul>
-        <ul>
+
           <li>
-            <Link to="/example/end">Detail 2</Link>
+            <Link to="/example/d2">
+              Detail 2 - It's button uses "push" (default behavior)
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/example/d3">Detail 3</Link>
           </li>
         </ul>
       </IonContent>

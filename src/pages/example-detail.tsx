@@ -32,13 +32,22 @@ function ExampleDetail() {
           </IonToolbar>
         </IonHeader>
         <div>
-          {params.id === 'start' ? (
+          {params.id === 'd1' ? (
             <IonButton
               onClick={() => {
                 router.push('/example/end', 'none', 'replace')
               }}
             >
-              Redirect to another detail
+              Redirect to another detail (w/replace)
+            </IonButton>
+          ) : null}
+          {params.id === 'd2' ? (
+            <IonButton
+              onClick={() => {
+                router.push('/example/end', 'none')
+              }}
+            >
+              Redirect to another detail (w/push - default behavior)
             </IonButton>
           ) : null}
         </div>
